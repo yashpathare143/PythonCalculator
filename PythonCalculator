@@ -1,0 +1,15 @@
+# This python program will keep adding number input by the user.
+# It will stop as soon as user enters 'q'
+
+sum = 0
+while True :
+    userinput = input("Enter the item's price or press 'q' to quit: ")        
+
+    if userinput != "q":
+        sum = sum + int(userinput)
+        print(f"Order total so far: {sum}")
+
+    elif userinput == "q":
+        print(f"Your Bill total is {sum}. Thanks for shopping with us")
+        
+     
